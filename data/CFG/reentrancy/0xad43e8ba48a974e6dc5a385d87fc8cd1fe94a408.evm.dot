@@ -1,0 +1,1881 @@
+digraph G {
+    node [shape=box, style="filled, rounded", color="#565f89", fontcolor="#c0caf5", fontname="Helvetica", fillcolor="#24283b"];
+    edge [color="#414868", fontcolor="#c0caf5", fontname="Helvetica"];
+    bgcolor="#1a1b26";
+    0 [ label = "[00] PUSH1 60
+[02] PUSH1 40
+[04] MSTORE
+[05] PUSH1 04
+[07] CALLDATASIZE
+[08] LT
+[09] PUSH2 00ba
+[0c] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+" shape = invhouse]
+    1 [ label = "[0d] PUSH1 00
+[0f] CALLDATALOAD
+[10] PUSH29 0100000000000000000000000000000000000000000000000000000000
+[2e] SWAP1
+[2f] DIV
+[30] PUSH4 ffffffff
+[35] AND
+[36] DUP1
+[37] PUSH4 38af3eed
+[3c] EQ
+[3d] PUSH2 03d0
+[40] JUMPI
+
+Stack size req: 0, sizeΔ: 1
+"]
+    2 [ label = "[41] DUP1
+[42] PUSH4 6e66f6e9
+[47] EQ
+[48] PUSH2 0425
+[4b] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->71:EQ:1
+"]
+    3 [ label = "[4c] DUP1
+[4d] PUSH4 70a08231
+[52] EQ
+[53] PUSH2 047a
+[56] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->82:EQ:1
+"]
+    4 [ label = "[57] DUP1
+[58] PUSH4 7b3e5e7b
+[5d] EQ
+[5e] PUSH2 04c7
+[61] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->93:EQ:1
+"]
+    5 [ label = "[62] DUP1
+[63] PUSH4 947f97cc
+[68] EQ
+[69] PUSH2 04f0
+[6c] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->104:EQ:1
+"]
+    6 [ label = "[6d] DUP1
+[6e] PUSH4 9f1eaa4c
+[73] EQ
+[74] PUSH2 0513
+[77] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->115:EQ:1
+"]
+    7 [ label = "[78] DUP1
+[79] PUSH4 a035b1fe
+[7e] EQ
+[7f] PUSH2 053f
+[82] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->126:EQ:1
+"]
+    8 [ label = "[83] DUP1
+[84] PUSH4 ab150226
+[89] EQ
+[8a] PUSH2 0568
+[8d] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->137:EQ:1
+"]
+    9 [ label = "[8e] DUP1
+[8f] PUSH4 ccb07cef
+[94] EQ
+[95] PUSH2 057d
+[98] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->148:EQ:1
+"]
+    10 [ label = "[99] DUP1
+[9a] PUSH4 df5055e6
+[9f] EQ
+[a0] PUSH2 05aa
+[a3] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->159:EQ:1
+"]
+    11 [ label = "[a4] DUP1
+[a5] PUSH4 e8801360
+[aa] EQ
+[ab] PUSH2 05d7
+[ae] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->170:EQ:1
+"]
+    12 [ label = "[af] DUP1
+[b0] PUSH4 ecba18c0
+[b5] EQ
+[b6] PUSH2 0600
+[b9] JUMPI
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->181:EQ:1
+"]
+    13 [ label = "[ba] JUMPDEST
+[bb] PUSH1 00
+[bd] DUP1
+[be] PUSH1 05
+[c0] PUSH1 00
+[c2] SWAP1
+[c3] SLOAD
+[c4] SWAP1
+[c5] PUSH2 0100
+[c8] EXP
+[c9] SWAP1
+[ca] DIV
+[cb] PUSH1 ff
+[cd] AND
+[ce] ISZERO
+[cf] DUP1
+[d0] ISZERO
+[d1] PUSH2 00e2
+[d4] JUMPI
+
+Stack size req: 0, sizeΔ: 3
+"]
+    14 [ label = "[d5] POP
+[d6] PUSH8 1bc16d674ec80000
+[df] CALLVALUE
+[e0] GT
+[e1] ISZERO
+
+Stack size req: 1, sizeΔ: 0
+Entry->Op usage:
+	0->213:POP:0
+Entry->Exit:
+	0->😵
+"]
+    15 [ label = "[e2] JUMPDEST
+[e3] ISZERO
+[e4] ISZERO
+[e5] PUSH2 00ed
+[e8] JUMPI
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->227:ISZERO:0
+Entry->Exit:
+	0->😵
+"]
+    16 [ label = "[e9] PUSH1 00
+[eb] DUP1
+[ec] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    17 [ label = "[ed] JUMPDEST
+[ee] CALLVALUE
+[ef] SWAP2
+[f0] POP
+[f1] DUP2
+[f2] PUSH1 06
+[f4] PUSH1 00
+[f6] CALLER
+[f7] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[010c] AND
+[010d] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0122] AND
+[0123] DUP2
+[0124] MSTORE
+[0125] PUSH1 20
+[0127] ADD
+[0128] SWAP1
+[0129] DUP2
+[012a] MSTORE
+[012b] PUSH1 20
+[012d] ADD
+[012e] PUSH1 00
+[0130] SHA3
+[0131] PUSH1 00
+[0133] DUP3
+[0134] DUP3
+[0135] SLOAD
+[0136] ADD
+[0137] SWAP3
+[0138] POP
+[0139] POP
+[013a] DUP2
+[013b] SWAP1
+[013c] SSTORE
+[013d] POP
+[013e] DUP2
+[013f] PUSH1 01
+[0141] PUSH1 00
+[0143] DUP3
+[0144] DUP3
+[0145] SLOAD
+[0146] ADD
+[0147] SWAP3
+[0148] POP
+[0149] POP
+[014a] DUP2
+[014b] SWAP1
+[014c] SSTORE
+[014d] POP
+[014e] PUSH1 12
+[0150] PUSH1 0a
+[0152] EXP
+[0153] PUSH1 04
+[0155] SLOAD
+[0156] DUP4
+[0157] DUP2
+[0158] ISZERO
+[0159] ISZERO
+[015a] PUSH2 015f
+[015d] JUMPI
+
+Stack size req: 2, sizeΔ: 3
+Entry->Op usage:
+	1->240:POP:0
+Entry->Exit:
+	1->😵
+"]
+    18 [ label = "[015e] INVALID
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    19 [ label = "[015f] JUMPDEST
+[0160] DIV
+[0161] MUL
+[0162] SWAP1
+[0163] POP
+[0164] PUSH1 02
+[0166] PUSH1 00
+[0168] SWAP1
+[0169] SLOAD
+[016a] SWAP1
+[016b] PUSH2 0100
+[016e] EXP
+[016f] SWAP1
+[0170] DIV
+[0171] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0186] AND
+[0187] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[019c] AND
+[019d] PUSH4 a9059cbb
+[01a2] CALLER
+[01a3] DUP4
+[01a4] PUSH1 40
+[01a6] MLOAD
+[01a7] DUP4
+[01a8] PUSH4 ffffffff
+[01ad] AND
+[01ae] PUSH29 0100000000000000000000000000000000000000000000000000000000
+[01cc] MUL
+[01cd] DUP2
+[01ce] MSTORE
+[01cf] PUSH1 04
+[01d1] ADD
+[01d2] DUP1
+[01d3] DUP4
+[01d4] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[01e9] AND
+[01ea] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[01ff] AND
+[0200] DUP2
+[0201] MSTORE
+[0202] PUSH1 20
+[0204] ADD
+[0205] DUP3
+[0206] DUP2
+[0207] MSTORE
+[0208] PUSH1 20
+[020a] ADD
+[020b] SWAP3
+[020c] POP
+[020d] POP
+[020e] POP
+[020f] PUSH1 00
+[0211] PUSH1 40
+[0213] MLOAD
+[0214] DUP1
+[0215] DUP4
+[0216] SUB
+[0217] DUP2
+[0218] PUSH1 00
+[021a] DUP8
+[021b] DUP1
+[021c] EXTCODESIZE
+[021d] ISZERO
+[021e] ISZERO
+[021f] PUSH2 0227
+[0222] JUMPI
+
+Stack size req: 4, sizeΔ: 6
+Entry->Op usage:
+	0->352:DIV:0
+	1->352:DIV:1
+	2->353:MUL:1
+	3->355:POP:0
+Entry->Exit:
+	0->😵
+	1->😵
+	2->😵
+	3->😵
+"]
+    20 [ label = "[0223] PUSH1 00
+[0225] DUP1
+[0226] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    21 [ label = "[0227] JUMPDEST
+[0228] PUSH2 02c6
+[022b] GAS
+[022c] SUB
+[022d] CALL
+[022e] ISZERO
+[022f] ISZERO
+[0230] PUSH2 0238
+[0233] JUMPI
+
+Stack size req: 6, sizeΔ: -6
+Entry->Op usage:
+	0->557:CALL:1
+	1->557:CALL:2
+	2->557:CALL:3
+	3->557:CALL:4
+	4->557:CALL:5
+	5->557:CALL:6
+Entry->Exit:
+	0->😵
+	1->😵
+	2->😵
+	3->😵
+	4->😵
+	5->😵
+"]
+    22 [ label = "[0234] PUSH1 00
+[0236] DUP1
+[0237] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    23 [ label = "[0238] JUMPDEST
+[0239] POP
+[023a] POP
+[023b] POP
+[023c] DUP1
+[023d] PUSH1 03
+[023f] PUSH1 00
+[0241] DUP3
+[0242] DUP3
+[0243] SLOAD
+[0244] ADD
+[0245] SWAP3
+[0246] POP
+[0247] POP
+[0248] DUP2
+[0249] SWAP1
+[024a] SSTORE
+[024b] POP
+[024c] PUSH32 8026fe2448be156ffb855f15d0f3dd2dd9f894e691b4cc72bce178af3393c3b5
+[026d] CALLER
+[026e] DUP4
+[026f] PUSH1 04
+[0271] SLOAD
+[0272] PUSH1 01
+[0274] PUSH1 40
+[0276] MLOAD
+[0277] DUP1
+[0278] DUP6
+[0279] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[028e] AND
+[028f] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[02a4] AND
+[02a5] DUP2
+[02a6] MSTORE
+[02a7] PUSH1 20
+[02a9] ADD
+[02aa] DUP5
+[02ab] DUP2
+[02ac] MSTORE
+[02ad] PUSH1 20
+[02af] ADD
+[02b0] DUP4
+[02b1] DUP2
+[02b2] MSTORE
+[02b3] PUSH1 20
+[02b5] ADD
+[02b6] DUP3
+[02b7] ISZERO
+[02b8] ISZERO
+[02b9] ISZERO
+[02ba] ISZERO
+[02bb] DUP2
+[02bc] MSTORE
+[02bd] PUSH1 20
+[02bf] ADD
+[02c0] SWAP5
+[02c1] POP
+[02c2] POP
+[02c3] POP
+[02c4] POP
+[02c5] POP
+[02c6] PUSH1 40
+[02c8] MLOAD
+[02c9] DUP1
+[02ca] SWAP2
+[02cb] SUB
+[02cc] SWAP1
+[02cd] LOG1
+[02ce] PUSH1 00
+[02d0] DUP1
+[02d1] SWAP1
+[02d2] SLOAD
+[02d3] SWAP1
+[02d4] PUSH2 0100
+[02d7] EXP
+[02d8] SWAP1
+[02d9] DIV
+[02da] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[02ef] AND
+[02f0] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0305] AND
+[0306] PUSH2 08fc
+[0309] DUP4
+[030a] SWAP1
+[030b] DUP2
+[030c] ISZERO
+[030d] MUL
+[030e] SWAP1
+[030f] PUSH1 40
+[0311] MLOAD
+[0312] PUSH1 00
+[0314] PUSH1 40
+[0316] MLOAD
+[0317] DUP1
+[0318] DUP4
+[0319] SUB
+[031a] DUP2
+[031b] DUP6
+[031c] DUP9
+[031d] DUP9
+[031e] CALL
+[031f] SWAP4
+[0320] POP
+[0321] POP
+[0322] POP
+[0323] POP
+[0324] ISZERO
+[0325] PUSH2 03cc
+[0328] JUMPI
+
+Stack size req: 5, sizeΔ: -3
+Entry->Op usage:
+	0->569:POP:0
+	1->570:POP:0
+	2->571:POP:0
+	3->580:ADD:1
+	3->582:POP:0
+	4->684:MSTORE:1
+	4->709:POP:0
+	4->780:ISZERO:0
+	4->798:CALL:2
+	4->802:POP:0
+Entry->Exit:
+	0->😵
+	1->😵
+	2->😵
+"]
+    24 [ label = "[0329] PUSH32 8026fe2448be156ffb855f15d0f3dd2dd9f894e691b4cc72bce178af3393c3b5
+[034a] PUSH1 00
+[034c] DUP1
+[034d] SWAP1
+[034e] SLOAD
+[034f] SWAP1
+[0350] PUSH2 0100
+[0353] EXP
+[0354] SWAP1
+[0355] DIV
+[0356] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[036b] AND
+[036c] DUP4
+[036d] PUSH1 04
+[036f] SLOAD
+[0370] PUSH1 00
+[0372] PUSH1 40
+[0374] MLOAD
+[0375] DUP1
+[0376] DUP6
+[0377] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[038c] AND
+[038d] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[03a2] AND
+[03a3] DUP2
+[03a4] MSTORE
+[03a5] PUSH1 20
+[03a7] ADD
+[03a8] DUP5
+[03a9] DUP2
+[03aa] MSTORE
+[03ab] PUSH1 20
+[03ad] ADD
+[03ae] DUP4
+[03af] DUP2
+[03b0] MSTORE
+[03b1] PUSH1 20
+[03b3] ADD
+[03b4] DUP3
+[03b5] ISZERO
+[03b6] ISZERO
+[03b7] ISZERO
+[03b8] ISZERO
+[03b9] DUP2
+[03ba] MSTORE
+[03bb] PUSH1 20
+[03bd] ADD
+[03be] SWAP5
+[03bf] POP
+[03c0] POP
+[03c1] POP
+[03c2] POP
+[03c3] POP
+[03c4] PUSH1 40
+[03c6] MLOAD
+[03c7] DUP1
+[03c8] SWAP2
+[03c9] SUB
+[03ca] SWAP1
+[03cb] LOG1
+
+Stack size req: 2, sizeΔ: 0
+Entry->Op usage:
+	1->938:MSTORE:1
+	1->963:POP:0
+"]
+    25 [ label = "[03cc] JUMPDEST
+[03cd] POP
+[03ce] POP
+[03cf] STOP
+
+Stack size req: 2, sizeΔ: -2
+Entry->Op usage:
+	0->973:POP:0
+	1->974:POP:0
+Entry->Exit:
+	0->😵
+	1->😵
+" color = "darkblue"]
+    26 [ label = "[03d0] JUMPDEST
+[03d1] CALLVALUE
+[03d2] ISZERO
+[03d3] PUSH2 03db
+[03d6] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    27 [ label = "[03d7] PUSH1 00
+[03d9] DUP1
+[03da] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    28 [ label = "[03db] JUMPDEST
+[03dc] PUSH2 03e3
+[03df] PUSH2 0625
+[03e2] JUMP
+
+Stack size req: 0, sizeΔ: 1
+"]
+    29 [ label = "[03e3] JUMPDEST
+[03e4] PUSH1 40
+[03e6] MLOAD
+[03e7] DUP1
+[03e8] DUP3
+[03e9] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[03fe] AND
+[03ff] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0414] AND
+[0415] DUP2
+[0416] MSTORE
+[0417] PUSH1 20
+[0419] ADD
+[041a] SWAP2
+[041b] POP
+[041c] POP
+[041d] PUSH1 40
+[041f] MLOAD
+[0420] DUP1
+[0421] SWAP2
+[0422] SUB
+[0423] SWAP1
+[0424] RETURN
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->1022:AND:1
+	0->1044:AND:1
+	0->1046:MSTORE:1
+	0->1051:POP:0
+Entry->Exit:
+	0->😵
+" color = "darkblue"]
+    30 [ label = "[0425] JUMPDEST
+[0426] CALLVALUE
+[0427] ISZERO
+[0428] PUSH2 0430
+[042b] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    31 [ label = "[042c] PUSH1 00
+[042e] DUP1
+[042f] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    32 [ label = "[0430] JUMPDEST
+[0431] PUSH2 0438
+[0434] PUSH2 064a
+[0437] JUMP
+
+Stack size req: 0, sizeΔ: 1
+"]
+    33 [ label = "[0438] JUMPDEST
+[0439] PUSH1 40
+[043b] MLOAD
+[043c] DUP1
+[043d] DUP3
+[043e] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0453] AND
+[0454] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0469] AND
+[046a] DUP2
+[046b] MSTORE
+[046c] PUSH1 20
+[046e] ADD
+[046f] SWAP2
+[0470] POP
+[0471] POP
+[0472] PUSH1 40
+[0474] MLOAD
+[0475] DUP1
+[0476] SWAP2
+[0477] SUB
+[0478] SWAP1
+[0479] RETURN
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->1107:AND:1
+	0->1129:AND:1
+	0->1131:MSTORE:1
+	0->1136:POP:0
+Entry->Exit:
+	0->😵
+" color = "darkblue"]
+    34 [ label = "[047a] JUMPDEST
+[047b] CALLVALUE
+[047c] ISZERO
+[047d] PUSH2 0485
+[0480] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    35 [ label = "[0481] PUSH1 00
+[0483] DUP1
+[0484] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    36 [ label = "[0485] JUMPDEST
+[0486] PUSH2 04b1
+[0489] PUSH1 04
+[048b] DUP1
+[048c] DUP1
+[048d] CALLDATALOAD
+[048e] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[04a3] AND
+[04a4] SWAP1
+[04a5] PUSH1 20
+[04a7] ADD
+[04a8] SWAP1
+[04a9] SWAP2
+[04aa] SWAP1
+[04ab] POP
+[04ac] POP
+[04ad] PUSH2 0670
+[04b0] JUMP
+
+Stack size req: 0, sizeΔ: 2
+"]
+    37 [ label = "[04b1] JUMPDEST
+[04b2] PUSH1 40
+[04b4] MLOAD
+[04b5] DUP1
+[04b6] DUP3
+[04b7] DUP2
+[04b8] MSTORE
+[04b9] PUSH1 20
+[04bb] ADD
+[04bc] SWAP2
+[04bd] POP
+[04be] POP
+[04bf] PUSH1 40
+[04c1] MLOAD
+[04c2] DUP1
+[04c3] SWAP2
+[04c4] SUB
+[04c5] SWAP1
+[04c6] RETURN
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->1208:MSTORE:1
+	0->1213:POP:0
+Entry->Exit:
+	0->😵
+" color = "darkblue"]
+    38 [ label = "[04c7] JUMPDEST
+[04c8] CALLVALUE
+[04c9] ISZERO
+[04ca] PUSH2 04d2
+[04cd] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    39 [ label = "[04ce] PUSH1 00
+[04d0] DUP1
+[04d1] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    40 [ label = "[04d2] JUMPDEST
+[04d3] PUSH2 04da
+[04d6] PUSH2 0688
+[04d9] JUMP
+
+Stack size req: 0, sizeΔ: 1
+"]
+    41 [ label = "[04da] JUMPDEST
+[04db] PUSH1 40
+[04dd] MLOAD
+[04de] DUP1
+[04df] DUP3
+[04e0] DUP2
+[04e1] MSTORE
+[04e2] PUSH1 20
+[04e4] ADD
+[04e5] SWAP2
+[04e6] POP
+[04e7] POP
+[04e8] PUSH1 40
+[04ea] MLOAD
+[04eb] DUP1
+[04ec] SWAP2
+[04ed] SUB
+[04ee] SWAP1
+[04ef] RETURN
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->1249:MSTORE:1
+	0->1254:POP:0
+Entry->Exit:
+	0->😵
+" color = "darkblue"]
+    42 [ label = "[04f0] JUMPDEST
+[04f1] CALLVALUE
+[04f2] ISZERO
+[04f3] PUSH2 04fb
+[04f6] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    43 [ label = "[04f7] PUSH1 00
+[04f9] DUP1
+[04fa] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    44 [ label = "[04fb] JUMPDEST
+[04fc] PUSH2 0511
+[04ff] PUSH1 04
+[0501] DUP1
+[0502] DUP1
+[0503] CALLDATALOAD
+[0504] SWAP1
+[0505] PUSH1 20
+[0507] ADD
+[0508] SWAP1
+[0509] SWAP2
+[050a] SWAP1
+[050b] POP
+[050c] POP
+[050d] PUSH2 068e
+[0510] JUMP
+
+Stack size req: 0, sizeΔ: 2
+"]
+    45 [ label = "[0511] JUMPDEST
+[0512] STOP
+
+Stack size req: 0, sizeΔ: 0
+" color = "darkblue"]
+    46 [ label = "[0513] JUMPDEST
+[0514] CALLVALUE
+[0515] ISZERO
+[0516] PUSH2 051e
+[0519] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    47 [ label = "[051a] PUSH1 00
+[051c] DUP1
+[051d] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    48 [ label = "[051e] JUMPDEST
+[051f] PUSH2 053d
+[0522] PUSH1 04
+[0524] DUP1
+[0525] DUP1
+[0526] CALLDATALOAD
+[0527] SWAP1
+[0528] PUSH1 20
+[052a] ADD
+[052b] SWAP1
+[052c] SWAP2
+[052d] SWAP1
+[052e] DUP1
+[052f] CALLDATALOAD
+[0530] SWAP1
+[0531] PUSH1 20
+[0533] ADD
+[0534] SWAP1
+[0535] SWAP2
+[0536] SWAP1
+[0537] POP
+[0538] POP
+[0539] PUSH2 07e5
+[053c] JUMP
+
+Stack size req: 0, sizeΔ: 3
+"]
+    49 [ label = "[053d] JUMPDEST
+[053e] STOP
+
+Stack size req: 0, sizeΔ: 0
+" color = "darkblue"]
+    50 [ label = "[053f] JUMPDEST
+[0540] CALLVALUE
+[0541] ISZERO
+[0542] PUSH2 054a
+[0545] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    51 [ label = "[0546] PUSH1 00
+[0548] DUP1
+[0549] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    52 [ label = "[054a] JUMPDEST
+[054b] PUSH2 0552
+[054e] PUSH2 0945
+[0551] JUMP
+
+Stack size req: 0, sizeΔ: 1
+"]
+    53 [ label = "[0552] JUMPDEST
+[0553] PUSH1 40
+[0555] MLOAD
+[0556] DUP1
+[0557] DUP3
+[0558] DUP2
+[0559] MSTORE
+[055a] PUSH1 20
+[055c] ADD
+[055d] SWAP2
+[055e] POP
+[055f] POP
+[0560] PUSH1 40
+[0562] MLOAD
+[0563] DUP1
+[0564] SWAP2
+[0565] SUB
+[0566] SWAP1
+[0567] RETURN
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->1369:MSTORE:1
+	0->1374:POP:0
+Entry->Exit:
+	0->😵
+" color = "darkblue"]
+    54 [ label = "[0568] JUMPDEST
+[0569] CALLVALUE
+[056a] ISZERO
+[056b] PUSH2 0573
+[056e] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    55 [ label = "[056f] PUSH1 00
+[0571] DUP1
+[0572] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    56 [ label = "[0573] JUMPDEST
+[0574] PUSH2 057b
+[0577] PUSH2 094b
+[057a] JUMP
+
+Stack size req: 0, sizeΔ: 1
+"]
+    57 [ label = "[057b] JUMPDEST
+[057c] STOP
+
+Stack size req: 0, sizeΔ: 0
+" color = "darkblue"]
+    58 [ label = "[057d] JUMPDEST
+[057e] CALLVALUE
+[057f] ISZERO
+[0580] PUSH2 0588
+[0583] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    59 [ label = "[0584] PUSH1 00
+[0586] DUP1
+[0587] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    60 [ label = "[0588] JUMPDEST
+[0589] PUSH2 0590
+[058c] PUSH2 09c3
+[058f] JUMP
+
+Stack size req: 0, sizeΔ: 1
+"]
+    61 [ label = "[0590] JUMPDEST
+[0591] PUSH1 40
+[0593] MLOAD
+[0594] DUP1
+[0595] DUP3
+[0596] ISZERO
+[0597] ISZERO
+[0598] ISZERO
+[0599] ISZERO
+[059a] DUP2
+[059b] MSTORE
+[059c] PUSH1 20
+[059e] ADD
+[059f] SWAP2
+[05a0] POP
+[05a1] POP
+[05a2] PUSH1 40
+[05a4] MLOAD
+[05a5] DUP1
+[05a6] SWAP2
+[05a7] SUB
+[05a8] SWAP1
+[05a9] RETURN
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->1430:ISZERO:0
+	0->1440:POP:0
+Entry->Exit:
+	0->😵
+" color = "darkblue"]
+    62 [ label = "[05aa] JUMPDEST
+[05ab] CALLVALUE
+[05ac] ISZERO
+[05ad] PUSH2 05b5
+[05b0] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    63 [ label = "[05b1] PUSH1 00
+[05b3] DUP1
+[05b4] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    64 [ label = "[05b5] JUMPDEST
+[05b6] PUSH2 05bd
+[05b9] PUSH2 09d6
+[05bc] JUMP
+
+Stack size req: 0, sizeΔ: 1
+"]
+    65 [ label = "[05bd] JUMPDEST
+[05be] PUSH1 40
+[05c0] MLOAD
+[05c1] DUP1
+[05c2] DUP3
+[05c3] ISZERO
+[05c4] ISZERO
+[05c5] ISZERO
+[05c6] ISZERO
+[05c7] DUP2
+[05c8] MSTORE
+[05c9] PUSH1 20
+[05cb] ADD
+[05cc] SWAP2
+[05cd] POP
+[05ce] POP
+[05cf] PUSH1 40
+[05d1] MLOAD
+[05d2] DUP1
+[05d3] SWAP2
+[05d4] SUB
+[05d5] SWAP1
+[05d6] RETURN
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->1475:ISZERO:0
+	0->1485:POP:0
+Entry->Exit:
+	0->😵
+" color = "darkblue"]
+    66 [ label = "[05d7] JUMPDEST
+[05d8] CALLVALUE
+[05d9] ISZERO
+[05da] PUSH2 05e2
+[05dd] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    67 [ label = "[05de] PUSH1 00
+[05e0] DUP1
+[05e1] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    68 [ label = "[05e2] JUMPDEST
+[05e3] PUSH2 05ea
+[05e6] PUSH2 09e9
+[05e9] JUMP
+
+Stack size req: 0, sizeΔ: 1
+"]
+    69 [ label = "[05ea] JUMPDEST
+[05eb] PUSH1 40
+[05ed] MLOAD
+[05ee] DUP1
+[05ef] DUP3
+[05f0] DUP2
+[05f1] MSTORE
+[05f2] PUSH1 20
+[05f4] ADD
+[05f5] SWAP2
+[05f6] POP
+[05f7] POP
+[05f8] PUSH1 40
+[05fa] MLOAD
+[05fb] DUP1
+[05fc] SWAP2
+[05fd] SUB
+[05fe] SWAP1
+[05ff] RETURN
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->1521:MSTORE:1
+	0->1526:POP:0
+Entry->Exit:
+	0->😵
+" color = "darkblue"]
+    70 [ label = "[0600] JUMPDEST
+[0601] CALLVALUE
+[0602] ISZERO
+[0603] PUSH2 060b
+[0606] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    71 [ label = "[0607] PUSH1 00
+[0609] DUP1
+[060a] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    72 [ label = "[060b] JUMPDEST
+[060c] PUSH2 0623
+[060f] PUSH1 04
+[0611] DUP1
+[0612] DUP1
+[0613] CALLDATALOAD
+[0614] ISZERO
+[0615] ISZERO
+[0616] SWAP1
+[0617] PUSH1 20
+[0619] ADD
+[061a] SWAP1
+[061b] SWAP2
+[061c] SWAP1
+[061d] POP
+[061e] POP
+[061f] PUSH2 09ef
+[0622] JUMP
+
+Stack size req: 0, sizeΔ: 2
+"]
+    73 [ label = "[0623] JUMPDEST
+[0624] STOP
+
+Stack size req: 0, sizeΔ: 0
+" color = "darkblue"]
+    74 [ label = "[0625] JUMPDEST
+[0626] PUSH1 00
+[0628] DUP1
+[0629] SWAP1
+[062a] SLOAD
+[062b] SWAP1
+[062c] PUSH2 0100
+[062f] EXP
+[0630] SWAP1
+[0631] DIV
+[0632] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0647] AND
+[0648] DUP2
+[0649] JUMP
+Indirect!
+
+Stack size req: 1, sizeΔ: 1
+Entry->Op usage:
+	0->1609:JUMP:0
+" color = "teal"]
+    75 [ label = "[064a] JUMPDEST
+[064b] PUSH1 02
+[064d] PUSH1 00
+[064f] SWAP1
+[0650] SLOAD
+[0651] SWAP1
+[0652] PUSH2 0100
+[0655] EXP
+[0656] SWAP1
+[0657] DIV
+[0658] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[066d] AND
+[066e] DUP2
+[066f] JUMP
+Indirect!
+
+Stack size req: 1, sizeΔ: 1
+Entry->Op usage:
+	0->1647:JUMP:0
+" color = "teal"]
+    76 [ label = "[0670] JUMPDEST
+[0671] PUSH1 06
+[0673] PUSH1 20
+[0675] MSTORE
+[0676] DUP1
+[0677] PUSH1 00
+[0679] MSTORE
+[067a] PUSH1 40
+[067c] PUSH1 00
+[067e] SHA3
+[067f] PUSH1 00
+[0681] SWAP2
+[0682] POP
+[0683] SWAP1
+[0684] POP
+[0685] SLOAD
+[0686] DUP2
+[0687] JUMP
+Indirect!
+
+Stack size req: 2, sizeΔ: 0
+Entry->Op usage:
+	0->1657:MSTORE:1
+	0->1666:POP:0
+	1->1671:JUMP:0
+Entry->Exit:
+	0->😵
+" color = "teal"]
+    77 [ label = "[0688] JUMPDEST
+[0689] PUSH1 01
+[068b] SLOAD
+[068c] DUP2
+[068d] JUMP
+Indirect!
+
+Stack size req: 1, sizeΔ: 1
+Entry->Op usage:
+	0->1677:JUMP:0
+" color = "teal"]
+    78 [ label = "[068e] JUMPDEST
+[068f] PUSH1 00
+[0691] DUP1
+[0692] SWAP1
+[0693] SLOAD
+[0694] SWAP1
+[0695] PUSH2 0100
+[0698] EXP
+[0699] SWAP1
+[069a] DIV
+[069b] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[06b0] AND
+[06b1] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[06c6] AND
+[06c7] CALLER
+[06c8] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[06dd] AND
+[06de] EQ
+[06df] ISZERO
+[06e0] ISZERO
+[06e1] PUSH2 06e9
+[06e4] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    79 [ label = "[06e5] PUSH1 00
+[06e7] DUP1
+[06e8] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    80 [ label = "[06e9] JUMPDEST
+[06ea] PUSH1 02
+[06ec] PUSH1 00
+[06ee] SWAP1
+[06ef] SLOAD
+[06f0] SWAP1
+[06f1] PUSH2 0100
+[06f4] EXP
+[06f5] SWAP1
+[06f6] DIV
+[06f7] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[070c] AND
+[070d] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0722] AND
+[0723] PUSH4 a9059cbb
+[0728] PUSH1 00
+[072a] DUP1
+[072b] SWAP1
+[072c] SLOAD
+[072d] SWAP1
+[072e] PUSH2 0100
+[0731] EXP
+[0732] SWAP1
+[0733] DIV
+[0734] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0749] AND
+[074a] DUP4
+[074b] PUSH1 40
+[074d] MLOAD
+[074e] DUP4
+[074f] PUSH4 ffffffff
+[0754] AND
+[0755] PUSH29 0100000000000000000000000000000000000000000000000000000000
+[0773] MUL
+[0774] DUP2
+[0775] MSTORE
+[0776] PUSH1 04
+[0778] ADD
+[0779] DUP1
+[077a] DUP4
+[077b] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0790] AND
+[0791] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[07a6] AND
+[07a7] DUP2
+[07a8] MSTORE
+[07a9] PUSH1 20
+[07ab] ADD
+[07ac] DUP3
+[07ad] DUP2
+[07ae] MSTORE
+[07af] PUSH1 20
+[07b1] ADD
+[07b2] SWAP3
+[07b3] POP
+[07b4] POP
+[07b5] POP
+[07b6] PUSH1 00
+[07b8] PUSH1 40
+[07ba] MLOAD
+[07bb] DUP1
+[07bc] DUP4
+[07bd] SUB
+[07be] DUP2
+[07bf] PUSH1 00
+[07c1] DUP8
+[07c2] DUP1
+[07c3] EXTCODESIZE
+[07c4] ISZERO
+[07c5] ISZERO
+[07c6] PUSH2 07ce
+[07c9] JUMPI
+
+Stack size req: 1, sizeΔ: 9
+Entry->Op usage:
+	0->1966:MSTORE:1
+	0->1973:POP:0
+"]
+    81 [ label = "[07ca] PUSH1 00
+[07cc] DUP1
+[07cd] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    82 [ label = "[07ce] JUMPDEST
+[07cf] PUSH2 02c6
+[07d2] GAS
+[07d3] SUB
+[07d4] CALL
+[07d5] ISZERO
+[07d6] ISZERO
+[07d7] PUSH2 07df
+[07da] JUMPI
+
+Stack size req: 6, sizeΔ: -6
+Entry->Op usage:
+	0->2004:CALL:1
+	1->2004:CALL:2
+	2->2004:CALL:3
+	3->2004:CALL:4
+	4->2004:CALL:5
+	5->2004:CALL:6
+Entry->Exit:
+	0->😵
+	1->😵
+	2->😵
+	3->😵
+	4->😵
+	5->😵
+"]
+    83 [ label = "[07db] PUSH1 00
+[07dd] DUP1
+[07de] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    84 [ label = "[07df] JUMPDEST
+[07e0] POP
+[07e1] POP
+[07e2] POP
+[07e3] POP
+[07e4] JUMP
+Indirect!
+
+Stack size req: 5, sizeΔ: -5
+Entry->Op usage:
+	0->2016:POP:0
+	1->2017:POP:0
+	2->2018:POP:0
+	3->2019:POP:0
+	4->2020:JUMP:0
+Entry->Exit:
+	0->😵
+	1->😵
+	2->😵
+	3->😵
+	4->😵
+" color = "teal"]
+    85 [ label = "[07e5] JUMPDEST
+[07e6] PUSH1 00
+[07e8] DUP1
+[07e9] SWAP1
+[07ea] SLOAD
+[07eb] SWAP1
+[07ec] PUSH2 0100
+[07ef] EXP
+[07f0] SWAP1
+[07f1] DIV
+[07f2] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0807] AND
+[0808] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[081d] AND
+[081e] CALLER
+[081f] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0834] AND
+[0835] EQ
+[0836] ISZERO
+[0837] ISZERO
+[0838] PUSH2 0840
+[083b] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    86 [ label = "[083c] PUSH1 00
+[083e] DUP1
+[083f] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    87 [ label = "[0840] JUMPDEST
+[0841] DUP1
+[0842] PUSH1 0a
+[0844] EXP
+[0845] DUP3
+[0846] MUL
+[0847] SWAP2
+[0848] POP
+[0849] PUSH1 02
+[084b] PUSH1 00
+[084d] SWAP1
+[084e] SLOAD
+[084f] SWAP1
+[0850] PUSH2 0100
+[0853] EXP
+[0854] SWAP1
+[0855] DIV
+[0856] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[086b] AND
+[086c] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0881] AND
+[0882] PUSH4 a9059cbb
+[0887] PUSH1 00
+[0889] DUP1
+[088a] SWAP1
+[088b] SLOAD
+[088c] SWAP1
+[088d] PUSH2 0100
+[0890] EXP
+[0891] SWAP1
+[0892] DIV
+[0893] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[08a8] AND
+[08a9] DUP5
+[08aa] PUSH1 40
+[08ac] MLOAD
+[08ad] DUP4
+[08ae] PUSH4 ffffffff
+[08b3] AND
+[08b4] PUSH29 0100000000000000000000000000000000000000000000000000000000
+[08d2] MUL
+[08d3] DUP2
+[08d4] MSTORE
+[08d5] PUSH1 04
+[08d7] ADD
+[08d8] DUP1
+[08d9] DUP4
+[08da] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[08ef] AND
+[08f0] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0905] AND
+[0906] DUP2
+[0907] MSTORE
+[0908] PUSH1 20
+[090a] ADD
+[090b] DUP3
+[090c] DUP2
+[090d] MSTORE
+[090e] PUSH1 20
+[0910] ADD
+[0911] SWAP3
+[0912] POP
+[0913] POP
+[0914] POP
+[0915] PUSH1 00
+[0917] PUSH1 40
+[0919] MLOAD
+[091a] DUP1
+[091b] DUP4
+[091c] SUB
+[091d] DUP2
+[091e] PUSH1 00
+[0920] DUP8
+[0921] DUP1
+[0922] EXTCODESIZE
+[0923] ISZERO
+[0924] ISZERO
+[0925] PUSH2 092d
+[0928] JUMPI
+
+Stack size req: 2, sizeΔ: 9
+Entry->Op usage:
+	0->2116:EXP:1
+	1->2118:MUL:0
+	1->2120:POP:0
+Entry->Exit:
+	1->😵
+"]
+    88 [ label = "[0929] PUSH1 00
+[092b] DUP1
+[092c] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    89 [ label = "[092d] JUMPDEST
+[092e] PUSH2 02c6
+[0931] GAS
+[0932] SUB
+[0933] CALL
+[0934] ISZERO
+[0935] ISZERO
+[0936] PUSH2 093e
+[0939] JUMPI
+
+Stack size req: 6, sizeΔ: -6
+Entry->Op usage:
+	0->2355:CALL:1
+	1->2355:CALL:2
+	2->2355:CALL:3
+	3->2355:CALL:4
+	4->2355:CALL:5
+	5->2355:CALL:6
+Entry->Exit:
+	0->😵
+	1->😵
+	2->😵
+	3->😵
+	4->😵
+	5->😵
+"]
+    90 [ label = "[093a] PUSH1 00
+[093c] DUP1
+[093d] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    91 [ label = "[093e] JUMPDEST
+[093f] POP
+[0940] POP
+[0941] POP
+[0942] POP
+[0943] POP
+[0944] JUMP
+Indirect!
+
+Stack size req: 6, sizeΔ: -6
+Entry->Op usage:
+	0->2367:POP:0
+	1->2368:POP:0
+	2->2369:POP:0
+	3->2370:POP:0
+	4->2371:POP:0
+	5->2372:JUMP:0
+Entry->Exit:
+	0->😵
+	1->😵
+	2->😵
+	3->😵
+	4->😵
+	5->😵
+" color = "teal"]
+    92 [ label = "[0945] JUMPDEST
+[0946] PUSH1 04
+[0948] SLOAD
+[0949] DUP2
+[094a] JUMP
+Indirect!
+
+Stack size req: 1, sizeΔ: 1
+Entry->Op usage:
+	0->2378:JUMP:0
+" color = "teal"]
+    93 [ label = "[094b] JUMPDEST
+[094c] PUSH1 00
+[094e] DUP1
+[094f] SWAP1
+[0950] SLOAD
+[0951] SWAP1
+[0952] PUSH2 0100
+[0955] EXP
+[0956] SWAP1
+[0957] DIV
+[0958] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[096d] AND
+[096e] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0983] AND
+[0984] CALLER
+[0985] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[099a] AND
+[099b] EQ
+[099c] ISZERO
+[099d] ISZERO
+[099e] PUSH2 09a6
+[09a1] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    94 [ label = "[09a2] PUSH1 00
+[09a4] DUP1
+[09a5] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    95 [ label = "[09a6] JUMPDEST
+[09a7] PUSH1 01
+[09a9] PUSH1 05
+[09ab] PUSH1 01
+[09ad] PUSH2 0100
+[09b0] EXP
+[09b1] DUP2
+[09b2] SLOAD
+[09b3] DUP2
+[09b4] PUSH1 ff
+[09b6] MUL
+[09b7] NOT
+[09b8] AND
+[09b9] SWAP1
+[09ba] DUP4
+[09bb] ISZERO
+[09bc] ISZERO
+[09bd] MUL
+[09be] OR
+[09bf] SWAP1
+[09c0] SSTORE
+[09c1] POP
+[09c2] JUMP
+Indirect!
+
+Stack size req: 1, sizeΔ: -1
+Entry->Op usage:
+	0->2498:JUMP:0
+Entry->Exit:
+	0->😵
+" color = "teal"]
+    96 [ label = "[09c3] JUMPDEST
+[09c4] PUSH1 05
+[09c6] PUSH1 00
+[09c8] SWAP1
+[09c9] SLOAD
+[09ca] SWAP1
+[09cb] PUSH2 0100
+[09ce] EXP
+[09cf] SWAP1
+[09d0] DIV
+[09d1] PUSH1 ff
+[09d3] AND
+[09d4] DUP2
+[09d5] JUMP
+Indirect!
+
+Stack size req: 1, sizeΔ: 1
+Entry->Op usage:
+	0->2517:JUMP:0
+" color = "teal"]
+    97 [ label = "[09d6] JUMPDEST
+[09d7] PUSH1 05
+[09d9] PUSH1 01
+[09db] SWAP1
+[09dc] SLOAD
+[09dd] SWAP1
+[09de] PUSH2 0100
+[09e1] EXP
+[09e2] SWAP1
+[09e3] DIV
+[09e4] PUSH1 ff
+[09e6] AND
+[09e7] DUP2
+[09e8] JUMP
+Indirect!
+
+Stack size req: 1, sizeΔ: 1
+Entry->Op usage:
+	0->2536:JUMP:0
+" color = "teal"]
+    98 [ label = "[09e9] JUMPDEST
+[09ea] PUSH1 03
+[09ec] SLOAD
+[09ed] DUP2
+[09ee] JUMP
+Indirect!
+
+Stack size req: 1, sizeΔ: 1
+Entry->Op usage:
+	0->2542:JUMP:0
+" color = "teal"]
+    99 [ label = "[09ef] JUMPDEST
+[09f0] PUSH1 00
+[09f2] DUP1
+[09f3] SWAP1
+[09f4] SLOAD
+[09f5] SWAP1
+[09f6] PUSH2 0100
+[09f9] EXP
+[09fa] SWAP1
+[09fb] DIV
+[09fc] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0a11] AND
+[0a12] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0a27] AND
+[0a28] CALLER
+[0a29] PUSH20 ffffffffffffffffffffffffffffffffffffffff
+[0a3e] AND
+[0a3f] EQ
+[0a40] ISZERO
+[0a41] ISZERO
+[0a42] PUSH2 0a4a
+[0a45] JUMPI
+
+Stack size req: 0, sizeΔ: 0
+"]
+    100 [ label = "[0a46] PUSH1 00
+[0a48] DUP1
+[0a49] REVERT
+
+Stack size req: 0, sizeΔ: 0
+" color = "red"]
+    101 [ label = "[0a4a] JUMPDEST
+[0a4b] DUP1
+[0a4c] PUSH1 05
+[0a4e] PUSH1 00
+[0a50] PUSH2 0100
+[0a53] EXP
+[0a54] DUP2
+[0a55] SLOAD
+[0a56] DUP2
+[0a57] PUSH1 ff
+[0a59] MUL
+[0a5a] NOT
+[0a5b] AND
+[0a5c] SWAP1
+[0a5d] DUP4
+[0a5e] ISZERO
+[0a5f] ISZERO
+[0a60] MUL
+[0a61] OR
+[0a62] SWAP1
+[0a63] SSTORE
+[0a64] POP
+[0a65] POP
+[0a66] JUMP
+Indirect!
+
+Stack size req: 2, sizeΔ: -2
+Entry->Op usage:
+	0->2654:ISZERO:0
+	0->2660:POP:0
+	0->2661:POP:0
+	1->2662:JUMP:0
+Entry->Exit:
+	0->😵
+	1->😵
+" color = "teal"]
+    0 -> 1 [ label = "False" color = "#f7768e"]
+    0 -> 13 [ label = "True" color = "#9ece6a"]
+    1 -> 2 [ label = "False" color = "#f7768e"]
+    1 -> 26 [ label = "True" color = "#9ece6a"]
+    2 -> 3 [ label = "False" color = "#f7768e"]
+    2 -> 30 [ label = "True" color = "#9ece6a"]
+    3 -> 4 [ label = "False" color = "#f7768e"]
+    3 -> 34 [ label = "True" color = "#9ece6a"]
+    4 -> 5 [ label = "False" color = "#f7768e"]
+    4 -> 38 [ label = "True" color = "#9ece6a"]
+    5 -> 6 [ label = "False" color = "#f7768e"]
+    5 -> 42 [ label = "True" color = "#9ece6a"]
+    6 -> 7 [ label = "False" color = "#f7768e"]
+    6 -> 46 [ label = "True" color = "#9ece6a"]
+    7 -> 8 [ label = "False" color = "#f7768e"]
+    7 -> 50 [ label = "True" color = "#9ece6a"]
+    8 -> 9 [ label = "False" color = "#f7768e"]
+    8 -> 54 [ label = "True" color = "#9ece6a"]
+    9 -> 10 [ label = "False" color = "#f7768e"]
+    9 -> 58 [ label = "True" color = "#9ece6a"]
+    10 -> 11 [ label = "False" color = "#f7768e"]
+    10 -> 62 [ label = "True" color = "#9ece6a"]
+    11 -> 12 [ label = "False" color = "#f7768e"]
+    11 -> 66 [ label = "True" color = "#9ece6a"]
+    12 -> 13 [ label = "False" color = "#f7768e"]
+    12 -> 70 [ label = "True" color = "#9ece6a"]
+    13 -> 14 [ label = "False" color = "#f7768e"]
+    13 -> 15 [ label = "True" color = "#9ece6a"]
+    14 -> 15 [ ]
+    15 -> 16 [ label = "False" color = "#f7768e"]
+    15 -> 17 [ label = "True" color = "#9ece6a"]
+    17 -> 18 [ label = "False" color = "#f7768e"]
+    17 -> 19 [ label = "True" color = "#9ece6a"]
+    19 -> 20 [ label = "False" color = "#f7768e"]
+    19 -> 21 [ label = "True" color = "#9ece6a"]
+    21 -> 22 [ label = "False" color = "#f7768e"]
+    21 -> 23 [ label = "True" color = "#9ece6a"]
+    23 -> 24 [ label = "False" color = "#f7768e"]
+    23 -> 25 [ label = "True" color = "#9ece6a"]
+    24 -> 25 [ ]
+    26 -> 27 [ label = "False" color = "#f7768e"]
+    26 -> 28 [ label = "True" color = "#9ece6a"]
+    28 -> 74 [ ]
+    30 -> 31 [ label = "False" color = "#f7768e"]
+    30 -> 32 [ label = "True" color = "#9ece6a"]
+    32 -> 75 [ ]
+    34 -> 35 [ label = "False" color = "#f7768e"]
+    34 -> 36 [ label = "True" color = "#9ece6a"]
+    36 -> 76 [ ]
+    38 -> 39 [ label = "False" color = "#f7768e"]
+    38 -> 40 [ label = "True" color = "#9ece6a"]
+    40 -> 77 [ ]
+    42 -> 43 [ label = "False" color = "#f7768e"]
+    42 -> 44 [ label = "True" color = "#9ece6a"]
+    44 -> 78 [ ]
+    46 -> 47 [ label = "False" color = "#f7768e"]
+    46 -> 48 [ label = "True" color = "#9ece6a"]
+    48 -> 85 [ ]
+    50 -> 51 [ label = "False" color = "#f7768e"]
+    50 -> 52 [ label = "True" color = "#9ece6a"]
+    52 -> 92 [ ]
+    54 -> 55 [ label = "False" color = "#f7768e"]
+    54 -> 56 [ label = "True" color = "#9ece6a"]
+    56 -> 93 [ ]
+    58 -> 59 [ label = "False" color = "#f7768e"]
+    58 -> 60 [ label = "True" color = "#9ece6a"]
+    60 -> 96 [ ]
+    62 -> 63 [ label = "False" color = "#f7768e"]
+    62 -> 64 [ label = "True" color = "#9ece6a"]
+    64 -> 97 [ ]
+    66 -> 67 [ label = "False" color = "#f7768e"]
+    66 -> 68 [ label = "True" color = "#9ece6a"]
+    68 -> 98 [ ]
+    70 -> 71 [ label = "False" color = "#f7768e"]
+    70 -> 72 [ label = "True" color = "#9ece6a"]
+    72 -> 99 [ ]
+    78 -> 79 [ label = "False" color = "#f7768e"]
+    78 -> 80 [ label = "True" color = "#9ece6a"]
+    80 -> 81 [ label = "False" color = "#f7768e"]
+    80 -> 82 [ label = "True" color = "#9ece6a"]
+    82 -> 83 [ label = "False" color = "#f7768e"]
+    82 -> 84 [ label = "True" color = "#9ece6a"]
+    85 -> 86 [ label = "False" color = "#f7768e"]
+    85 -> 87 [ label = "True" color = "#9ece6a"]
+    87 -> 88 [ label = "False" color = "#f7768e"]
+    87 -> 89 [ label = "True" color = "#9ece6a"]
+    89 -> 90 [ label = "False" color = "#f7768e"]
+    89 -> 91 [ label = "True" color = "#9ece6a"]
+    93 -> 94 [ label = "False" color = "#f7768e"]
+    93 -> 95 [ label = "True" color = "#9ece6a"]
+    99 -> 100 [ label = "False" color = "#f7768e"]
+    99 -> 101 [ label = "True" color = "#9ece6a"]
+    74 -> 29 [ ]
+    75 -> 33 [ ]
+    76 -> 37 [ ]
+    77 -> 41 [ ]
+    84 -> 45 [ ]
+    91 -> 49 [ ]
+    92 -> 53 [ ]
+    95 -> 57 [ ]
+    96 -> 61 [ ]
+    97 -> 65 [ ]
+    98 -> 69 [ ]
+    101 -> 73 [ ]
+
+}
