@@ -3,7 +3,7 @@ This project aims to leverage Graph Neural Networks (GNNs) to detect vulnerabili
 ## Features
 **Smart Contract Parsing:** Convert smart contract code into graph representations using the [evm-cfg](https://github.com/plotchy/evm-cfg/) tool.\
 Graph Neural Networks: Utilize GNN models to analyze the structure and relationships within the smart contract.\
-**Vulnerability Detection:** Identify common vulnerabilities in smart contracts such as reentrancy, arithmetic.\
+**Vulnerability Detection:** Identify common vulnerabilities in smart contracts such as reentrancy, arithmetic.
 ## Folder Structure
 ### Preprocessing/: Contains scripts for:
 **genCFG:** Obtain CFGs using [evm-cfg](https://github.com/plotchy/evm-cfg/).\
